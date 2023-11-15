@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.container {
+  /* Định nghĩa việc sẽ sử dụng flex */
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap-reverse;
+  flex: 1;
+}
+
+.box {
+  height: 300px;
+  width: 300px;
+  display: flex;
+}
+
+.box-1 {
+  background-color: red;
+  flex: 2;
+}
+
+.box-2 {
+  background-color: yellow;
+  flex: 2;
+}
+
+.box-3 {
+  background-color: aqua;
+  flex: 2;
+}
+
+.box4,
+.box5 {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+
+.header {
+  background: linear-gradient(#ee4d2d, #ff7337);
+  height: 56px;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.list-item {
+  display: flex;
+  gap: 15px;
+}
+.item {
+}
+
+.item-info {
+  position: relative;
+}
+
+.list-option {
+  position: absolute;
+  background-color: black;
+  width: 150px;
+  border-radius: 4px;
+  right: 0;
+  top: 30px;
+  display: none;
+}
+
+.list-option::after {
+  content: "";
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 10px solid rgb(0, 0, 0);
+  position: absolute;
+  top: -10px;
+  right: 19px;
+}
+
+.item-info:hover .list-option {
+  display: block;
+}
+
+.option {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: #d2bbbb;
+}
+
+.triangle {
+  width: 10px;
+  height: 10px;
+  /* background-color: rgb(0, 0, 0); */
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid red;
+}

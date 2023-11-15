@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./form.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form class="form">
+        <h3 class="form-heading">Đăng ký tài khoản</h3>
+        <div class="form-group">
+          <label for="" class="form-label">Họ và tên</label>
+          <input type="text" class="form-input" />
+        </div>
+        <div class="form-group">
+          <label for="" class="form-label">Ngày sinh</label>
+          <input type="date" class="form-input" />
+        </div>
+        <div class="form-group">
+          <label for="" class="form-label">Email</label>
+          <input type="text" class="form-input" />
+        </div>
+        <div class="form-group">
+          <label for="" class="form-label">Mật khẩu</label>
+          <input type="password" class="form-input" />
+        </div>
+        <div class="form-group">
+          <label for="" class="form-label">Hình ảnh</label>
+          <label for="image">
+            <i class="fa-solid fa-cloud-arrow-up"></i>
+          </label>
+          <input hidden id="image" type="file" class="form-input" />
+        </div>
+        <div class="form-button">
+          <button type="reset" class="button button-reset">Làm mới</button>
+          <button type="submit" class="button button-primary">Thêm mới</button>
+        </div>
+        <p class="redirect">Bạn đã có tài khoản? <a href="">Đăng nhập</a></p>
+      </form>
+    </div>
+  </body>
+</html>
